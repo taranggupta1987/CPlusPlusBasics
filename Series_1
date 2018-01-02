@@ -6,8 +6,8 @@ using namespace std;
 
 int main(){
 	  int i,n,a=2,b=9,count=1;
-  	cout<<"Enter the number : "<<endl;
-  	cin>>n;
+  	  cout<<"Enter the number : "<<endl;
+  	  cin>>n;
 
 	  float sum=a/b;
 	  for(i=0;i<=n;i++)
