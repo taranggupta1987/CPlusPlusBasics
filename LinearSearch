@@ -1,0 +1,35 @@
+#include <iostream>
+
+using namespace std;
+
+//Linear Search
+int main()
+{
+    int count, arr[10], number;
+    
+    cout<<"Enter the number of element you want in array : ";
+    cin>>count;
+    
+    cout<<"\nEnter "<<count<<" element in array : ";
+    
+    for(int i = 0; i<count; i++)
+        cin>>arr[i];
+
+    cout<<"\nEnter the number to be search in array : ";
+    cin>>number;
+
+    int isFound = 0;
+    
+    for(int j = 0; j<count; j++){
+        if(arr[j]==number){
+            isFound = 1;
+            cout<<"Element found at "<<j<<" index at position "<<j+1<<endl;
+        }
+    }
+    
+    if(isFound==0){
+        cout<<"Bad Luck!!!!! Try again";
+    }
+    
+    return 0;
+}
