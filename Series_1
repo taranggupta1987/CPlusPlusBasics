@@ -1,0 +1,19 @@
+#include <cmath>
+#include <iostream>
+using namespace std;
+
+//Series -->  2/9 - 5/13 + 8/17....
+
+int main(){
+	  int i,n,a=2,b=9,count=1;
+  	cout<<"Enter the number : "<<endl;
+  	cin>>n;
+
+	  float sum=a/b;
+	  for(i=0;i<=n;i++)
+	  {
+	    sum=sum+pow(-1,count)*(a+3)/(b+4);
+ 	   count++;
+ 	 }
+ 	 cout<<"\nThe sum of the series is = "<<sum;
+}
